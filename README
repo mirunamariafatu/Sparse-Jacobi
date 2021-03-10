@@ -1,0 +1,15 @@
+Fatu Miruna-Maria
+311CA
+
+Sparse Jacobi
+
+Generate Probabilities System : 
+	- trateaza "labirintul" in 3 parti distincte: prima linie , mijlocul labirintului si ultima linie.
+	- pentru mijlocul labirintului, parcurgem liniile de la 2:penultima linie, unde pentru fiecare linie vom trata inca 3 cazuri: prima intersectie, cele din mijlocul liniei si ultima, iar pentru fiecare adaugam -1 pe pozitia intersectiilor vecine
+	- ultima linie este parcursa exact ca cele din mijloc, 
+
+Matrix_to_csr: 
+	- se parcurge matricea, iar cand este intalnita o valoare nenula, aceasta este retinuta in vectorul values, iar pozitia ei in vectorul colind
+	- pentru vectorul rowptr se parcurge matricea (in lungime), idx1 crescand la fiecare gasire a unui numar nenul de pe fiecare rand, pointerul la primul element de pe urmatorul rand fiind idx1+1
+
+Jacobi_sparse si Jacobi_factorization urmaresc algoritmul de implementare a metodei iterative Jacobi.
